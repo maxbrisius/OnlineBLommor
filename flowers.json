@@ -1,0 +1,14 @@
+[
+  {
+    "name": "min coola blomma",
+    "price": "12kr",
+    "image": "flower1.jpg",
+    "description": "whoop whoop"
+  },
+  {
+    "name": "min fula blomma",
+    "price": "16kr",
+    "image": "flower1.jpg",
+    "description": "whoop"
+  }
+]

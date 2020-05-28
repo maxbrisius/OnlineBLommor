@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><K5 class="html"></K5></title>
+    <script defer src="K5js.js"></script>
+    <link rel="stylesheet" href="K5css.css">
+</head>
+<body>
+
+
+  <header>
+
+    <h1 onclick="switchTab('home')">
+      OnlineBlommor.Com
+    </h1>
+
+    <nav>
+      <!-- <div><Button onclick class="flowerclass"></Button onclick();="navbarbutton"></div> -->
+      <div onclick="switchTab('home')" class="option">Hem</div>
+      <div onclick="switchTab('events')" class="option">Tillfällen</div>
+      <div onclick="switchTab('birthday')" class="option">Födelsedag</div>
+      <div onclick="switchTab('send_abroad')" class="option">Skicka Utomlands</div>
+      <div onclick="switchTab('voucher')" class="option">Presentkort</div>
+    </nav>
+
+  <!-- <div>
+      <h2>Tillfällen</h2>
+      <p>(Skriv en list med öppettider för vardagar och helger(Aldrig öppen eftersom det är en hemsida))</p>
+  </div>
+  <div>
+      <h2>Födelsedag</h2>
+      <p>(För födelsedagar gäller följande erbjudanden:</p>
+      <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non commodi perferendis doloribus, accusantium, magnam cumque vero ipsam voluptates optio ex quod error eos delectus. Dicta deleniti eaque fugiat! Sapiente, explicabo.</p>
+  </div>
+  <div>
+      <h2>Skicka Utomlands</h2>
+      <p>(Tyvärr kan blommor inte skickas utomlands längre pga Corona. Affären dock är fortararande öppen under samma öppettider! </p>
+  </div>
+  <div>
+      <h2>Presentkort</h2>
+      <p>(3-4 Produkter som kan visas i en Underflik vid navbaren</p>
+  </div> -->
+
+  </header>
+
+  <div class="window open" id="home">
+    <div id="flowers_container">
+      <div style="display:none;" class="flower_container" id="flower_template">
+        <!-- setting src with js -->
+        <img alt="[alt]">
+        <div class="text_container">
+          <p>[name]</p>
+          <p style="float:right;">[price]</p>
+        </div>
+      </div>
+    </div>
+    <div id="flower_popup" class="flower_popup">
+      <div class="container">
+        <div onclick="closePopup();" class="close_button">
+          Close
+        </div>
+        <p id="flower_popup_name">Namn</p>
+        <div class="hoz_line"></div>
+        <div class="under_line">  
+          <img id="flower_popup_image" src="" alt="">
+          <div class="left_text">
+            <p id="flower_popup_price"></p>
+            <p id="flower_popup_desc"></p>
+          </div>
+        </div>
+      </
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+  </div>
+  <div class="window" id="birthday">
+    birthday
+  </div>
+  <div class="window" id="send_abroad">
+    send_abroad
+  </div>
+  <div class="window" id="voucher">
+    voucher
+  </div>
+
+  <footer>
+      <p>(lista med mailadress, FB ikon, Ig, ikon och twitterikon</p>
+
+  </footer>
+
+</body>
+</html>

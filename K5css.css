@@ -1,0 +1,153 @@
+html, body {
+  margin: 0;
+}
+
+header {
+  /* - 10px because of padding. */
+  width: calc(100% - 10px);
+  background-color: #222;
+  color: #fff;
+  height: 80px;
+  padding: 5px;
+}
+
+header h1 {
+  user-select: none;
+  margin: 0;
+}
+
+header nav {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header nav .option {
+  margin-left: 20px;
+  user-select: none;
+  cursor: pointer;
+}
+
+header nav .options:first-child {
+  margin-left: 0px;
+}
+
+.window {
+  display: none;
+}
+
+.window.open {
+  display: block;
+}
+
+.flower_popup {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.flower_popup .container {
+  width: 80%;
+  height: 80%;
+  max-width: 600px;
+  max-height: 400px;
+  min-width: 550px;
+  min-height: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+}
+
+.flower_popup .container #flower_popup_name {
+  margin: 10px;
+  font-size: 1.4rem;
+}
+
+.flower_popup .container .hoz_line {
+  width: 98%;
+  height: 1px;
+  background-color: #222;
+  margin: 0 auto;
+}
+
+.flower_popup .container .close_button {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.under_line {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  height: 250px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.flower_popup .container #flower_popup_image {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #222;
+}
+
+.flower_popup .container .left_text {
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+}
+
+.flower_popup .container .left_text p:first-of-type {
+  margin-bottom: 10px;
+}
+
+.flower_popup .container .left_text p {
+  margin: 0;
+  display: block;
+}
+
+#flowers_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flower_container {
+  min-width: 250px;
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  border: 1px solid #222;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.flower_container .text_container {
+  padding: 10px;
+}
+
+.flower_container .text_container p {
+  /* display: flex;
+  flex-direction: row;
+  align-items: center; */
+  display: inline-block;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.flower_container img {
+  width: 250px;
+  height: 250px;
+  border-bottom: 1px solid #222;
+}
